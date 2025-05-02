@@ -290,7 +290,7 @@ ORDER BY total_spent DESC;
 
 <img width="658" alt="treemap" src="https://github.com/user-attachments/assets/c4c1f418-7e77-4936-a382-ce23ce005fdc" />
 
- **Generation X** spent the most:**
+ **Generation X** spent the most:
 
 * Debit: **47,801** transactions worth **$1.8M**
 * Credit: **20,048** transactions worth **$1.1M**
