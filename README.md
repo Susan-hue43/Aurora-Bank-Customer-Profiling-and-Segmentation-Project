@@ -38,7 +38,7 @@ To gain a deep understanding of customer demographics, financial health, and beh
 
 ## 1. Customer Demographics
 
-### a. Gender Distribution
+### 1.1. Gender Distribution
 
 ```sql
 TOTAL CUSTOMERS BY GENDER
@@ -52,7 +52,7 @@ ORDER BY total_customers;
 
 The customer base is nearly evenly split, with **50.8%** being female and **49.2%** male. While the difference is minor, it indicates a slightly stronger female presence.
 
-### b. Age Distribution
+### 1.2. Age Distribution
 
 ```sql
 CUSTOMER AGE DISTRIBUTION
@@ -66,7 +66,7 @@ FROM users_data;
 
 Customers range from **18** to **101** years old, with an average age of **45** years.
 
-### c. Age Group Segmentation
+### 1.3. Age Group Segmentation
 
 ```sql
 SELECT
@@ -107,7 +107,7 @@ The majority of customers fall within **Generation X (601)** and **Millennials (
 
 ## 2. Credit Score Analysis
 
-### a. Credit Score Distribution
+### 2.1. Credit Score Distribution
 
 ```sql
 SELECT MAX(credit_score) Highest_Score,
@@ -147,9 +147,10 @@ ORDER BY total_customers DESC;
 
 <img width="858" alt="barchart" src="https://github.com/user-attachments/assets/28e00be0-a677-4daa-ac5e-e8041f9c0546" />
 
+
 Nearly half the customers (**46.55%**) fall into the "Good" category, followed by "Very Good" (**23.70%**) and "Fair" (**17.40%**). A smaller percentage are in the "Exceptional" (**8.30%**) and "Poor" (**4.05%**) categories. This suggests that the majority have moderate financial health.
 
-### b. Factors Influencing Credit Scores
+### 2.2. Factors Influencing Credit Scores
 
 ```sql
 SELECT
@@ -176,7 +177,7 @@ ORDER BY credit_score_category;
 
 <img width="504" alt="FinfCreditScore" src="https://github.com/user-attachments/assets/88df0ca5-6e47-47a3-81d7-b6be27a3b5df" />
 
-**Debt-to-Income Ratio:** 
+#### 2.2.1. Debt-to-Income Ratio: 
 
 Customers with "**Fair**" and "**Poor**" scores carry the highest average debt (**$78,340** and **$74,023**, respectively) relative to income (**$45,742.92**, and **$46,247.28**), resulting in elevated debt-to-income ratios (**1.71** and **1.60**), indicating financial strain. The highest ratio is observed in the "Fair" category.
 
@@ -207,7 +208,11 @@ ORDER BY avg_credit_score DESC;
 
 <img width="553" alt="AgeCreditscores" src="https://github.com/user-attachments/assets/321bd755-24ad-4dd5-8f82-aa07490ca6af" />
 
-**Age & Credit Scores:** 
+
+#### 2.2.2. Age & Credit Scores:
+
+<img width="658" alt="treemap" src="https://github.com/user-attachments/assets/c4c1f418-7e77-4936-a382-ce23ce005fdc" />
+
 
 Older generations, particularly the **Greatest Generation** (**739** average score) and **Baby Boomers** (**712**) have higher credit scores and more credit cards. This suggests better credit management.
 
@@ -253,7 +258,7 @@ A significant portion (**79.4%**) of customers fall into the "**High Risk**" cat
 
 ## 4. Card Ownership & Usage Trends
 
-### a. Transactions by Age Group
+### 4.1. Transactions by Age Group
 
 Behavioral Analytics – Card Usage
 
@@ -288,8 +293,6 @@ ORDER BY total_spent DESC;
 
 <img width="695" alt="TransAgeGrp" src="https://github.com/user-attachments/assets/a3c82d20-b74e-4aea-870d-b94ca05a60f9" />
 
-<img width="658" alt="treemap" src="https://github.com/user-attachments/assets/c4c1f418-7e77-4936-a382-ce23ce005fdc" />
-
  **Generation X** spent the most:
 
 * Debit: **47,801** transactions worth **$1.8M**
@@ -298,7 +301,7 @@ ORDER BY total_spent DESC;
 **Female** customers prefer debit cards (**53,182** transactions, **$2.06M** spent) and spend more per credit transaction (**$56.75** on average).
 **Male** customers spend slightly more per debit transaction (**$40.32** vs. **$38.83** for females) but use credit cards less frequently.
 
-### b. Card Type Preferences
+### 4.2. Card Type Preferences
 
 Debit cards are the most widely used, whereas prepaid cards remain the least utilized across all demographics.
 
@@ -315,7 +318,7 @@ Debit cards are the most widely used, whereas prepaid cards remain the least uti
 
 ### Dashboard
 
-<img width="804" alt="dashboard" src="https://github.com/user-attachments/assets/0d761b6b-fab9-425d-8af7-76549ed214d0" />
+<img width="829" alt="dashboard" src="https://github.com/user-attachments/assets/c5e2c691-1566-4e05-b6f7-e466a4595850" />
 
 ---
 
